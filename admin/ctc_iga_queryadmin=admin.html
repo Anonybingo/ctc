@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
+    <title>IGA | Admin</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar"></nav>
+        <div class="input-box">
+            <i class="uil uil-search" style="color: #333; font-size: 20px;"></i>
+            <input type="text" placeholder="Search here..." />
+            <button class="button">Search</button>
+        </div>
+        <div class="profile">
+            <a href="#proinfo" onclick="toggleForm()"><img src="/upload/media/profile.png" alt="Profile"  id="#profileinfo"></a>
+            <div id="proinfo" class="div-to-hide">
+                <h1><button id="closeButton">X</button></h1>
+                <a href="" class="probutton"><div class="prolinks">Settings & privacy</div></a>
+                <a href="" class="probutton"><div class="prolinks">Help & Support</div></a>
+                <button id="logout"><div><img src="/media/logout.png" alt=""><h4>Logout</h4></div></button>
+                <div class="profooter">&copy; <span id="currentYear"></span> IGA. All rights reserved.</div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="#" onclick="showDiv('content')">Requests</a></li>
+                <li><a href="#" onclick="showDiv('content2')">Contents</a></li>
+                <li><a href="#" onclick="showDiv('content3')">Users</a></li>
+            </ul>
+        </div>
+        <div id="content" class="content box"> 
+            <div class="notification-inbox" id="notification-zone">
+                <h2>Requests</h2><hr>
+                <table cellspacing="0" style="margin-top: 10px; width: 100%;">
+                    <tr>
+                        <td class="notification">
+                            <p>Janson MPINGA NDAYIZEYE Marcelo</p>
+                            <div class="notibuttons">
+                                <button id="activate">Activate</button>
+                                <button id="block">Block</button>
+                                <button id="delete">Delete</button>
+                            </div>
+                            <div id="notificationinfo">
+                                <u><strong>Username: </strong></u><p>Janson</p>
+                                <u><strong>Email: </strong></u><p>janson@gmail.com</p>
+                                <u><strong>Password: </strong></u><p>janson@123</p>    
+                            </div>  
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="notification">
+                            <p>Janson MPINGA NDAYIZEYE Marcelo</p>
+                            <div class="notibuttons">
+                                <button id="activate">Activate</button>
+                                <button id="block">Block</button>
+                                <button id="delete">Delete</button>
+                            </div>
+                            <div id="notificationinfo">
+                                <strong>Username: </strong><p>Janson</p>
+                                <strong>Email: </strong><p>janson@gmail.com</p>
+                                <strong>Password: </strong><p>janson@123</p>    
+                            </div>  
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="notification">
+                            <p>Janson MPINGA NDAYIZEYE Marcelo</p>
+                            <div class="notibuttons">
+                                <button id="activate">Activate</button>
+                                <button id="block">Block</button>
+                                <button id="delete">Delete</button>
+                            </div>
+                            <div id="notificationinfo">
+                                <strong>Username: </strong><p>Janson</p>
+                                <strong>Email: </strong><p>janson@gmail.com</p>
+                                <strong>Password: </strong><p>janson@123</p>    
+                            </div>  
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="content2" class="box hidden">
+            <div class="notification-inbox" id="notification-zone">
+                <h2>Contents</h2><hr>
+                <table cellspacing="0" style="margin-top: 10px; width: 100%;">
+                    <tr>
+                        <td class="notification">
+                            <p>jsdfhdsjkfhdskjfhsndakf</p>
+                            <div class="notibuttons">
+                                <button id="activate">Activate</button>
+                                <button id="block">Block</button>
+                                <button id="delete">Delete</button>
+                            </div>
+                            <div id="notificationinfo">
+                                <u><strong>Username: </strong></u><p>jjjjjjjjjj</p>
+                                <u><strong>Email: </strong></u><p>janson@gmail.com</p>
+                                <u><strong>Password: </strong></u><p>janson@123</p>    
+                            </div>  
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="notification">
+                            <p>Jansosdfdsfsfadffsfafd</p>
+                            <div class="notibuttons">
+                                <button id="activate">Activate</button>
+                                <button id="block">Block</button>
+                                <button id="delete">Delete</button>
+                            </div>
+                            <div id="notificationinfo">
+                                <strong>Username: </strong><p>qqqqqqqqqqq</p>
+                                <strong>Email: </strong><p>janson@gmail.com</p>
+                                <strong>Password: </strong><p>janson@123</p>    
+                            </div>  
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="content3" class="box hidden">
+            <div class="notification-inbox" id="notification-zone">
+                <h2>Users</h2><hr>
+                <table cellspacing="0" style="margin-top: 10px; width: 100%;">
+                    <tr>
+                        <td class="notification">
+                            <p>Janson MPINGA NDAYIZEYE Marcelo</p>
+                            <div class="notibuttons">
+                                <button id="activate">Activate</button>
+                                <button id="disactivate">Disactivate</button>
+                                <button id="delete">Delete</button>
+                            </div>
+                            <div id="notificationinfo">
+                                <u><strong>Username: </strong></u><p>Janson</p>
+                                <u><strong>Email: </strong></u><p>janson@gmail.com</p>
+                                <u><strong>Password: </strong></u><p>janson@123</p>    
+                            </div>  
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer class="footerb">
+        <div class="copyright">&copy; <span id="currentYear"></span> IGA. All rights reserved.</div>
+    </footer>
+  <script>
+    const yearSpan = document.getElementById('currentYear');
+    const currentYear = new Date().getFullYear();
+    yearSpan.textContent = currentYear;
+  </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,393 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    height: 600px;
+    width: 100%;
+    
+}
+
+.header{
+    width: 100%;
+    height: 60px;
+    justify-items: center;
+}
+
+.input-box {
+    position: relative;
+    height: 76px;
+    max-width: 900px;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.input-box i,
+.input-box .button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.input-box i {
+    left: 20px;
+    font-size: 30px;
+    color: #707070;
+}
+.input-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    padding: 0 155px 0 65px;
+    background-color: transparent;
+    background-color: aliceblue;
+}
+.input-box .button {
+    right: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    background-color: #333;
+    cursor: pointer;
+    width: 100px;
+    justify-items: center;
+    align-items: center;
+}
+
+.input-box .button:hover{
+    animation: none;
+    animation-name: searchbutton;
+    animation-duration: 2s;
+    transition: 2s;
+}
+
+@keyframes searchbutton{
+    from{
+        background-color: white;
+        color: #333;
+    }
+}
+
+.input-box .button:active {
+    transform: translateY(-50%) scale(0.98);
+}
+@media screen and (max-width: 500px) {
+    .input-box {
+      height: 66px;
+      margin: 0 8px;
+    }
+    .input-box i {
+      left: 12px;
+      font-size: 25px;
+    }
+    .input-box input {
+      padding: 0 112px 0 50px;
+    }
+    .input-box .button {
+      right: 12px;
+      font-size: 14px;
+      padding: 8px 18px;
+    }
+}
+
+.profile{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    /* background-color: aqua; */
+    margin-left: 90%;
+    margin-top: -45px;
+}
+
+.profile img{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    margin: -10px -10px;
+}
+
+.profile-btn{
+    border: none;
+    outline: none;
+    background: none;
+    color: #275360;
+    cursor: pointer;
+    transition: 0.15s ease;
+}
+
+#proinfo{
+    display: none;
+    background: rgba(168, 168, 168, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 300px;
+    height: 250px;
+    margin-left: -200px;
+    justify-items: center;
+}
+
+.prolinks{
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    background-color: #ccc;
+    color: #2d2a2a;
+    width: 290px;
+    height: 40px;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.prolinks:hover{
+    color: #aaa;
+    background-color: #2d2a2a;
+}
+
+.probutton{
+    display: contents;
+    color: #2d2a2a;
+    text-align: center;
+}
+
+.probutton:hover{
+    color: #aaa;
+}
+
+#logout{
+    display: flex;
+    margin-top: 80px;
+    width: 290px;
+    height: 35px;
+    background-color: #2d2a2a;
+    color: #aaa;
+    font-size: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+#logout:hover{
+    background-color: #aaa;
+    cursor: pointer;
+    color: #2d2a2a;
+    animation: none;
+    animation-name: logouts;
+    animation-duration: 2s;
+    transition: 2s;
+}
+
+@keyframes logouts{
+    from{
+        background-color: #aaa;
+    }
+}
+
+#logout div img{
+    width: 20px;
+    height: 20px;
+    margin-left: -120px;
+}
+
+#logout div h4{
+    margin-left: 110px;
+    margin-top: -18px;
+}
+
+.profooter{
+    margin-top: 1px;
+    font-size: 10px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: solid #959595;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 50px;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+}
+
+.sidebar a:hover{
+    color: #564b64;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.notification-inbox {
+    border: 1px solid #ccc;
+    padding: 20px;
+    height: 500px;
+}
+
+.notification-inbox ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.notification-inbox li {
+    margin-bottom: 10px;
+}
+
+.notification-inbox a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footerb{
+    width: 100%;
+    height: 155.5px;
+    justify-items: center;
+    align-items: center;
+    bottom: 0;
+    background-color: #333;
+    position: absolute;
+}
+
+.copyright{
+    bottom: 0;
+    margin-top: 135px;
+    color: #aaa;
+}
+
+.notification {
+    width: 100%;
+    height: 30px;
+    background-color: #333;
+    border-radius: 10px;
+    color: #ccc;
+    display: flex;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+#notification:hover {
+    background-color: #0056b3;
+}
+
+.notification p{
+    width: 1250px;
+    margin: 6px 10px;
+}
+
+.notification .notibuttons button {
+    margin-left: 18px;
+    border-radius: 10px;
+    width: 100px;
+    background-color: cadetblue;
+    color: white;
+    font-weight: bold;
+}
+
+.notification .notibuttons button:hover {
+    animation: none;
+    animation-name: nnotibuttons;
+    animation-duration: 2s;
+    transition: 2s;
+}
+
+@keyframes nnotibuttons{
+    from{
+        background-color: white;
+        color: cadetblue;
+    }
+}
+
+.notibuttons{
+    width: 60px;
+    margin-left: -10%;
+    display: flex;
+}
+
+#notificationinfo {
+    display: none;
+    position: absolute;
+    top: 70%;
+    left: 0;
+    margin-top: 10px;
+    width: 250px;
+    padding: 15px;
+    color: #000000;
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    z-index: 10;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(10px);
+    background: rgba(168, 168, 168, 0.2);
+}
+
+.notification:hover  #notificationinfo {
+    display: block;
+    animation: none;
+    animation-name: notificationinfos;
+    animation-duration: 2s;
+    transition: 2s;
+}
+
+@keyframes notificationinfos{
+    from{
+        background-color: #564b64;
+    }
+}
+
+.box {
+    display: none;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+  
+.box:not(.hidden) {
+    display: block;
+}
