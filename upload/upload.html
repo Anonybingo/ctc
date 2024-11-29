@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>IGA | Upload</title>
+</head>
+<body id="close">
+    <header id="close">
+        <nav class="navbar" id="close">
+            <ul class="links">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+            <div class="profile">
+                <a href="#proinfo" onclick="toggleForm()"><img src="/upload/media/profile.png" alt="Profile"  id="#profileinfo"></a>
+                <div id="proinfo" class="div-to-hide">
+                    <h1><button id="closeButton">X</button></h1>
+                    <a href="" class="probutton"><div class="prolinks">Settings & privacy</div></a>
+                    <a href="" class="probutton"><div class="prolinks">Help & Support</div></a>
+                    <button id="logout"><div><img src="/upload/media/logout.png" alt=""><h4>Logout</h4></div></button>
+                    <div class="profooter">CTC &copy;2024</div>
+                </div>
+            </div>
+        </nav>
+    </header><hr>
+    <div class="container" id="close">
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <div class="drop-zone">
+                <img src="/upload/media/uploadimg.png" alt="">
+                <span class="drop-zone__prompt">Drop files here or Click to select files</span>
+                <input type="file" name="files[]" id="files" multiple hidden>
+            </div>
+            <div class="select">
+                <label for="lessons">Lessons:</label>
+                <select name="lessons" id="lessons">
+                    <option value="1">Mathematics</option>
+                    <option value="2">Physics</option>
+                    <option value="3">Computer Science</option>
+                    <option value="4">Chemistry</option>
+                    <option value="5">Biology</option>
+                    <option value="6">Geography</option>
+                    <option value="7">History</option>
+                    <option value="8">Entrepreneurship</option>
+                    <option value="9">English</option>
+                </select>
+            </div>
+            <div class="bname">
+                <label for="name">Name of book:</label>
+                <input type="text" name="bname" id="name" required>
+            </div>
+            <div class="grade show">
+                <label for="grade">Grade Level:</label>
+                <select name="grade" id="grade" style="font-size: 15px;" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </div>
+            <br><br>
+            <input type="submit" value="Upload Files" class="submit">
+        </form>
+    </div>
+</body>
+</html>
